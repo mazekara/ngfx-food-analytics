@@ -20,6 +20,8 @@ jobs:
           pip install pandas numpy requests plotly matplotlib scipy
 
       - name: Build static site
+        env:
+          PYTHONPATH: ${{ github.workspace }}
         run: |
           python tools/build_static.py
 
