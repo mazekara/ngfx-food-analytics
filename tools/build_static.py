@@ -4,6 +4,8 @@ from pathlib import Path
 import pandas as pd
 import plotly.express as px
 import plotly.io as pio
+import sys, os
+sys.path.append(os.path.dirname(os.path.dirname(__file__)))
 import market_plotting as mp
 
 # Google Sheet IDs (same as your Dash app)
